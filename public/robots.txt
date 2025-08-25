@@ -1,0 +1,35 @@
+# Robots.txt for Beon
+# Allow all crawlers
+
+User-agent: *
+Allow: /
+
+# Disallow admin and private areas
+Disallow: /admin/
+Disallow: /api/
+Disallow: /storage/
+Disallow: /login
+Disallow: /register
+Disallow: /password/
+
+# Allow specific files
+Allow: /css/
+Allow: /js/
+Allow: /images/
+
+# Sitemap location
+Sitemap: https://beon.chat/sitemap.xml
+Sitemap: https://beon-system.unlimited-software.com/sitemap.xml
+
+# Crawl delay (in seconds)
+Crawl-delay: 1
+
+# Specific rules for Google
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+# Specific rules for Bing
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
